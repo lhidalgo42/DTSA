@@ -48,10 +48,10 @@
                                       {{ Session::get('mensaje_error') }}
                                 @endif
                                 <div class="form-group">
-                                      {{ Form::text('email', Input::old('email'), array('placeholder' => 'E-mail','class' => 'form-control')) }}
+                                      {{ Form::text('email', Input::old('email'), array('placeholder' => 'E-mail','class' => 'form-control','required','autofocus')) }}
                                 </div>
                                 <div class="form-group">
-                                     {{ Form::password('password',array('placeholder' => 'Contraseña','class' => 'form-control' )) }}
+                                     {{ Form::password('password',array('placeholder' => 'Contraseña','class' => 'form-control' ,'required')) }}
                                 </div>
                                 <div class="checkbox">
                                      <label>
