@@ -13,6 +13,14 @@ class UsersController extends BaseController
     }
     public function profile()
     {
-        return View::make('user.profile');
+        $user = Auth::user();
+        return View::make('user.profile',compact('user'));
+    }
+    public function profileUpdate()
+    {
+        $user = User::where('email',Auth::user()->email);
+        /* $user->email =
+        $user = Auth::user(); */
+        return View::make('user.profile',compact('user'));
     }
 }

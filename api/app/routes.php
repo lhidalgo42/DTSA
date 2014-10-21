@@ -43,7 +43,9 @@ Route::group(array('before' => 'auth'), function(){
 Route::group(array('before' => 'auth'), function(){
     Route::get('/', 'UsersController@index');
     Route::get('/dashboard', 'UsersController@index');
+    Route::get('/dashboard/{id}/sensor/', 'SensorsController@show');
     Route::get('/profile', 'UsersController@profile');
+    Route::post('/profile', 'UsersController@profileUpdate');
     Route::get('control/{sensor}/{value}', 'ControlController@create');
     Route::get('logout', array('uses' => 'SessionController@destroy'));
 });

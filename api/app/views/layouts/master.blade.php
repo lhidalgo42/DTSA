@@ -39,6 +39,20 @@
         {{ HTML::script('https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js') }}
     <![endif]-->
     @yield('css','')
+    
+        <!-- jQuery Version 1.11.0 -->
+        {{ HTML::script('js/jquery-1.11.0.js') }}
+
+        <!-- Bootstrap Core JavaScript -->
+        {{ HTML::script('js/bootstrap.min.js') }}
+
+        <!-- Metis Menu Plugin JavaScript -->
+        {{ HTML::script('js/plugins/metisMenu/metisMenu.min.js') }}
+
+        <!-- Custom Theme JavaScript -->
+        {{ HTML::script('js/sb-admin-2.js') }}
+
+        {{ HTML::script('http://code.highcharts.com/highcharts.js')}}
 
     @yield('scripts','')
 </head>
@@ -53,17 +67,5 @@
        </div>
         <!-- /#wrapper -->
 
-
-        <!-- jQuery Version 1.11.0 -->
-        {{ HTML::script('js/jquery-1.11.0.js') }}
-
-        <!-- Bootstrap Core JavaScript -->
-        {{ HTML::script('js/bootstrap.min.js') }}
-
-        <!-- Metis Menu Plugin JavaScript -->
-        {{ HTML::script('js/plugins/metisMenu/metisMenu.min.js') }}
-
-        <!-- Custom Theme JavaScript -->
-        {{ HTML::script('js/sb-admin-2.js') }}
 
 </body>
