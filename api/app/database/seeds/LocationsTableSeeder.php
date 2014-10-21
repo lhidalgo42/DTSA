@@ -6,7 +6,7 @@ class LocationsTableSeeder extends Seeder {
     {
 
         Location::create([
-            'name'  => "Living"
+            'name'  => "Planta"
         ]);
 
     }

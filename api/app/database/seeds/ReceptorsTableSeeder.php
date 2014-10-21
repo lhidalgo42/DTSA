@@ -6,16 +6,16 @@ class ReceptorsTableSeeder extends Seeder {
     {
 
         Receptor::create([
-            'mac' => "0013A20040AA51C4",
-            'name'  => "Control Status",
+            'mac' => "0013A20040AA51DC",
+            'name'  => "Mesa de Corte 1",
             'types_id' => "1",
             'coordinators_id' => "1",
             'locations_id' => "1"
         ]);
         Receptor::create([
-            'mac' => "0013A20040BB60FE",
-            'name'  => "Sensor Temperatura",
-            'types_id' => "2",
+            'mac' => "0013A20040AA549F",
+            'name'  => "Mesa de Corte 2",
+            'types_id' => "1",
             'coordinators_id' => "1",
             'locations_id' => "1"
         ]);

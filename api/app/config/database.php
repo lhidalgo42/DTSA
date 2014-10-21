@@ -48,7 +48,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'mbox',
+			'database'  => 'dtsa',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

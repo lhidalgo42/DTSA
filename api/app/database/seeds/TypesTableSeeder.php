@@ -6,14 +6,10 @@ class TypesTableSeeder extends Seeder {
     {
             Type::create([
 
-                'name' => "Control Simple",
-                'parameter'  => "dio-0 : dio-1 : dio-2 : dio-3 : dio-4 : dio-5 : dio-6 : dio-7",
+                'name' => "Sensor Simple",
+                'parameter'  => "Sing : Integer : decimal",
                 'example' => "1:1:0:0:1:0:0:0"
             ]);
-            Type::create([
-                'name' => "Sensor Temperatura",
-                "parameter" => "Sign : integer : decimal",
-                'example' => "00 : 13 : 62"
-            ]);
+
     }
 }
