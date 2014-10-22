@@ -26,9 +26,11 @@ class UsersController extends BaseController
 
     public function settings()
     {
-        $types = Type::all();
-        /* $user->email =
-        $user = Auth::user(); */
-        return View::make('user.settings',compact('types'));
+        if (Auth::check()) {
+            $types = Type::all();
+            $receptors = Coordinator::join('receptors', 'receptors.coordinators_id', '=', 'coordinators.id')->where('coordinators.users_id', Auth::user()->id)->select('receptors.name', 'receptors.id','receptors.mac')->get();
+
+            return View::make('user.settings', compact('types','receptors'));
+        }
     }
 }

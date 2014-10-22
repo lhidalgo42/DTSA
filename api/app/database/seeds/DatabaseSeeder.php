@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder {
         $this->call('LocationsTableSeeder');
         $this->call('ValuesTableSeeder');
         $this->call('ControlsTableSeeder');
+        $this->call('InventoryTableSeeder');
+        $this->call('InventoryReceptorTableSeeder');
 	}
 
 }

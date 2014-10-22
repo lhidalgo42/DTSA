@@ -17,17 +17,11 @@
     <!-- MetisMenu CSS -->
     {{ HTML::style('css/plugins/metisMenu/metisMenu.min.css') }}
 
-    <!-- Social Buttons CSS -->
-    {{ HTML::style('css/plugins/social-buttons.css') }}
 
-    <!-- Timeline CSS -->
-    {{ HTML::style('css/plugins/timeline.css') }}
 
     <!-- Custom CSS -->
     {{ HTML::style('css/sb-admin-2.css') }}
 
-    <!-- Morris Charts CSS -->
-    {{ HTML::style('css/plugins/morris.css') }}
 
     <!-- Custom Fonts -->
     {{ HTML::style('//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css') }}

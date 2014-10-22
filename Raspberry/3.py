@@ -37,8 +37,8 @@ def updatesensor(dispositivo):
                 options='\x00',
                 data='\x01')
 
-            xbee.wait_read_frame(3)
-            response = xbee.wait_read_frame(3)
+            xbee.wait_read_frame(1)
+            response = xbee.wait_read_frame(1)
             mac = response['source_addr']
             mac = '00'+''.join("{:02X}".format(ord(c)) for c in mac)
             data = response['data']
