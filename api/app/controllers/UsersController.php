@@ -23,4 +23,12 @@ class UsersController extends BaseController
         $user = Auth::user(); */
         return View::make('user.profile',compact('user'));
     }
+
+    public function settings()
+    {
+        $types = Type::all();
+        /* $user->email =
+        $user = Auth::user(); */
+        return View::make('user.settings',compact('types'));
+    }
 }

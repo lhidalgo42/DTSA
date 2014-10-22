@@ -15,11 +15,12 @@
                         <li>
                             <a href="/"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
+                        @foreach(Coordinator::where('users_id',Auth::user()->id)->select('id','name','location_id')->get() as $coordinador)
 
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Receptores<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i>{{$coordinador->name}}<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                            @foreach(Receptor::join('coordinators', 'coordinators.id', '=', 'receptors.coordinators_id')->where('coordinators.users_id','=',Auth::user()->id)->select('receptors.mac','receptors.name','receptors.id')->get() as $receptor)
+                            @foreach(Receptor::where('receptors.coordinators_id',$coordinador->id)->select('receptors.mac','receptors.name','receptors.id')->get() as $receptor)
                                 <li>
                                     <a href="#"><i class="fa fa-share-alt fa-fw"></i> {{$receptor->name}} <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
@@ -36,8 +37,9 @@
                             <!-- /.nav-second-level -->
 
                         </li>
+                        @endforeach
                          <li>
-                             <a href="/logout"><i class="fa fa-times fa-fw"></i> Logout</a>
+                             <a href="/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                          </li>
                     </ul>
                 </div>

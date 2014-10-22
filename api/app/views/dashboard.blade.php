@@ -1,21 +1,21 @@
 @extends('layouts.master')
 
-     @section('content')
-     <div id="page-wrapper">
-                 <div class="row">
-                     <div class="col-lg-12">
-                         <h1 class="page-header">Bienvenido  </h1>
-                     </div>
-                     <!-- /.col-lg-12 -->
-                 </div>
-                 <!-- /.row -->
-                 @include('sensors.card')
-                 <!-- /.row -->
-                 <div class="row">
+               @section('content')
+               <div id="page-wrapper">
+                           <div class="row">
+                               <div class="col-lg-12">
+                                   <h1 class="page-header">Bienvenido  </h1>
+                               </div>
+                               <!-- /.col-lg-12 -->
+                           </div>
+                           <!-- /.row -->
+                           @include('sensors.card')
+                           <!-- /.row -->
+                           <div class="row">
 
-                 </div>
-                 <!-- /.row -->
-             </div>
-             <!-- /#page-wrapper -->
+                           </div>
+                           <!-- /.row -->
+                       </div>
+                       <!-- /#page-wrapper -->
 
-     @stop
+               @stop

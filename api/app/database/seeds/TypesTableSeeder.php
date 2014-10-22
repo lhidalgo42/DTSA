@@ -6,10 +6,16 @@ class TypesTableSeeder extends Seeder {
     {
             Type::create([
 
-                'name' => "Sensor Simple",
-                'parameter'  => "Sing : Integer : decimal",
-                'example' => "1:1:0:0:1:0:0:0"
+                'name' => "Sensor Simple ( Recive un sensor)",
+                'parameter'  => "Signo (00 => '+',01 => '-') : Entero (Hexadecimal) : Decimal (Hexadecimal)",
+                'example' => "00:1F:A1"
             ]);
+        Type::create([
+
+            'name' => "Sensor Doble ( Recive 2 sensores)",
+            'parameter'  => "Signo (00 => '+',01 => '-') : Entero (Hexadecimal) : Decimal (Hexadecimal) : Signo (00 => '+',01 => '-') : Entero (Hexadecimal) : Decimal (Hexadecimal)",
+            'example' => "00:1F:A1:01:AE:B2"
+        ]);
 
     }
 }
