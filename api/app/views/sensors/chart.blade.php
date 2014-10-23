@@ -59,6 +59,7 @@ var options = {
             }]
         };
 
+
 $(function(){
     $('#chart').highcharts(options);
 });

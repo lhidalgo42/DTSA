@@ -32,7 +32,11 @@ class ValueController extends \BaseController {
                     $valors[] = "-".$data[1].".".$data[2];
                 }
                 for ($i=0 ; $i < count($valors);$i++){
-                    Value::create(['value' => $valors[$i], 'sensors_id' => $sensors_ids[$i] ]);
+                    $value = new Value;
+                    $value->value = $valors[$i];
+                    $value->$sensors_ids[$i];
+                    $value->save();
+                    echo $value->id;
                 }
         }
 	}
