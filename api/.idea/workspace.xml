@@ -28,7 +28,7 @@
       <file leaf-file-name="master.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075" vertical-offset="646" max-vertical-offset="1173">
+            <state vertical-scroll-proportion="-11.115385" vertical-offset="544" max-vertical-offset="1173">
               <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="19" />
               <folding />
             </state>
@@ -38,12 +38,9 @@
       <file leaf-file-name="map.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/user/map.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9" vertical-offset="102" max-vertical-offset="544">
-              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-              <folding>
-                <element signature="e#358#385#0#HTML" expanded="true" />
-                <element signature="e#401#428#0#HTML" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.65" vertical-offset="102" max-vertical-offset="1190">
+              <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -147,8 +144,8 @@
         <option value="$PROJECT_DIR$/app/views/sensors/chart.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/SensorsController.php" />
         <option value="$USER_HOME$/AppData/Local/Temp/Rar$EXa0.324/zoom.js-master/index.html" />
-        <option value="$PROJECT_DIR$/app/views/user/map.blade.php" />
         <option value="$PROJECT_DIR$/app/controllers/ValueController.php" />
+        <option value="$PROJECT_DIR$/app/views/user/map.blade.php" />
       </list>
     </option>
   </component>
@@ -814,26 +811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="646" max-vertical-offset="1173">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ValueController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.230769" vertical-offset="380" max-vertical-offset="1020">
           <caret line="38" column="36" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/SensorsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="731" max-vertical-offset="1632">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -865,14 +846,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/SensorsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="731" max-vertical-offset="1632">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/master.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.115385" vertical-offset="544" max-vertical-offset="1173">
+          <caret line="49" column="12" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/user/map.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9" vertical-offset="102" max-vertical-offset="544">
-          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="e#358#385#0#HTML" expanded="true" />
-            <element signature="e#401#428#0#HTML" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.65" vertical-offset="102" max-vertical-offset="1190">
+          <caret line="19" column="90" selection-start-line="19" selection-start-column="90" selection-end-line="19" selection-end-column="90" />
+          <folding />
         </state>
       </provider>
     </entry>
