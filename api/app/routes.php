@@ -47,6 +47,7 @@ Route::group(array('before' => 'auth'), function(){
     Route::get('/profile', 'UsersController@profile');
     Route::post('/profile', 'UsersController@profileUpdate');
     Route::get('/settings', 'UsersController@settings');
+    Route::get('/{id}/map', 'ReceptorController@show');
     Route::get('/control/{sensor}/{value}', 'ControlController@create');
     Route::get('/logout', array('uses' => 'SessionController@destroy'));
 });

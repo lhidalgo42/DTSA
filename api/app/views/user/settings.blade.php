@@ -4,7 +4,8 @@
 <div id="page-wrapper">
     <div class="row">
           <div class="col-lg-12">
-               <h1 class="page-header">Configuraciones</h1>
+               <h1 class="page-header">Configuraciones<span class="pull-right"><a href="/1/map"><i class="fa fa-file-image-o"></i> Ver mapa</span></a></h1>
+               <h1 class=" right"></h1>
           </div>
                                  <!-- /.col-lg-12 -->
     </div>
