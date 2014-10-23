@@ -46,7 +46,6 @@
         <!-- Custom Theme JavaScript -->
         {{ HTML::script('js/sb-admin-2.js') }}
 
-        {{ HTML::script('http://code.highcharts.com/highcharts.js')}}
 
     @yield('scripts','')
 </head>

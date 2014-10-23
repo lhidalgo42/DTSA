@@ -49,5 +49,6 @@ def updatesensor(dispositivo):
 
 while True:
     updatesensor('\x00\x13\xA2\x00\x40\xAA\x54\x9F')
+    updatesensor('\x00\x13\xA2\x00\x40\xAA\x51\xDC')
 
 

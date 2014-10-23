@@ -36,3 +36,6 @@
              <!-- /#page-wrapper -->
 
      @stop
+     @section('scripts')
+     {{ HTML::script('http://code.highcharts.com/highcharts.js')}}
+     @stop
