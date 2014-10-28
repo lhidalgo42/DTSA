@@ -8,7 +8,7 @@
           </div>
                                  <!-- /.col-lg-12 -->
     </div>
-    <div class="row cycle-slideshow" id="site">
+    <div class="row" id="site">
         <img src="/img/map.PNG" width="100%" id="map">
                 <div id="text1">
                     <strong><button class="btn btn-success"></button></strong> @{{ status 1 }}
@@ -19,18 +19,29 @@
                 <div id="text3">
                     <strong><button class="btn btn-danger"></button></strong> @{{ status 3 }}
                 </div>
+                <div id="text4">
+                    <strong><button class="btn btn-success"></button></strong> @{{ status 4 }}
+                </div>
+                <div id="text5">
+                    <strong><button class="btn btn-warning"></button></strong> @{{ status 5 }}
+                </div>
+                <div id="text6">
+                    <strong><button class="btn btn-danger"></button></strong> @{{ status 6 }}
+                </div>
     </div>
 </div>
-        <!-- /#page-wrapper -->
+        		<script src="/js/plugins/zoom.js"></script>
+        		<script>
+        			$("#site").children("div").click(function(e){
+        			e.preventDefault();
+        			zoom.to({ element: e.target,
+        			          scale: 2});
+        			})
+        		</script>
 
-@stop
-@section('scripts')
-{{ HTML::script('js/plugins/WheelZoom.js')}}
-<script>
-$(document).ready(function(){
-    wheelzoom($("#map"));
-});
-</script>
+
+        		<!-- Everything below this point is unrelated to the library -->
+
 @stop
 @section('css')
 <style>
@@ -57,6 +68,27 @@ z-index:1;
     position: absolute;
     top: 365px;
     left: 800px;;
+    z-index:2;
+
+}
+#text4 {
+    position: absolute;
+    top: 400px;
+    left: 400px;;
+    z-index:2;
+
+}
+#text5 {
+    position: absolute;
+    top: 415px;
+    left: 400px;;
+    z-index:2;
+
+}
+#text6 {
+    position: absolute;
+    top: 430px;
+    left: 400px;;
     z-index:2;
 
 }
